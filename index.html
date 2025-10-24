@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<link href="style.css" rel="stylesheet" />
+	<script src="./allegro.js"></script>
+	<script src="./main.js"></script>
+</head>
+<body v-scope>
+	<main>
+		<input id="testInput" type="text" v-model="test">
+		<p id="testPara" v-effect="$el.innerText = test"></p>
+		<button @click="reset()">reset</button>
+		<button @click="change()">change</button>
+		<canvas id="canvas" class="canvas"></canvas>
+		<!-- Vue init -->
+		<script src="./smolvue.js"></script>
+		<script>
+			PetiteVue.createApp({
+				UI: vue_ui,
+		  		test: vue_ui.text,
+			  	reset()
+			  	{
+			  		this.test = 'Test';
+			  	},
+
+			  	change()
+			  	{
+			  		this.test = 'Sumfin different';
+			  	},
+
+			  	alTest()
+			  	{
+			  		console.log("called from Allegro");
+			  	},
+		  	}).mount()
+		</script>
+	</main>
+</body>
+</html>

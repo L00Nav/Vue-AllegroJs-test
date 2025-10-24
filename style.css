@@ -1,0 +1,54 @@
+body {
+	background-color: #111111;
+	color: #aaaaaa;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+body * {
+	color: #aaaaaa;
+	font-family: 'arial';
+	font-size: 24px;
+}
+
+main {
+	padding: 30px;
+	height: calc(100% - 50px);
+	box-sizing: border-box;
+}
+
+.nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 100vw;
+	background-color: #222;
+}
+
+.canvas {
+	display: block;
+	margin: 0 auto 0 auto;
+	padding-top: 50px;
+}
+
+.left_container, .right_container {
+	height: 80vh;
+	width: 40vw;
+	display: inline-block;
+}
+
+.left_container {
+	border: 1px solid red;
+}
+
+.right_container {
+	border: 1px solid blue;
+}
+
+.eyetum {
+	display: inline-block;
+	border: 1px solid #aaa;
+	margin: 10px;
+}
