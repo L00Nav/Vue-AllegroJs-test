@@ -29,8 +29,21 @@ main {
 
 .canvas {
 	display: block;
+	margin: 50px auto 0 auto;
+}
+
+.ui {
+	position: relative;
+	/*background-color: #77222255;*/
 	margin: 0 auto 0 auto;
-	padding-top: 50px;
+	width: 640px;
+	height: 360px;
+	top: -360px;
+}
+
+.game_container {
+	overflow: hidden;
+	height: 420px;
 }
 
 .left_container, .right_container {
@@ -51,4 +64,7 @@ main {
 	display: inline-block;
 	border: 1px solid #aaa;
 	margin: 10px;
+	padding: 2px;
+	background-color: #2222aa;
+	border-radius: 5px;
 }

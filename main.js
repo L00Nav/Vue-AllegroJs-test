@@ -5,7 +5,8 @@
 let mainFont;
 
 const vue_ui = {
-	text: "Ultra rare burgies",
+	bawxes: ["One", "Two", "Three"],
+	number: 0,
 }
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -28,6 +29,7 @@ const testScene = {
 	draw()
 	{
 		clear_to_color(canvas, makecol(40, 40, 40));
+		textout_centre(canvas, font, vue_ui.number, 320, 180, 24, makecol(200, 200, 200));
 	},
 };
 
@@ -75,5 +77,3 @@ function main()
 	return 0;
 }
 END_OF_MAIN();
-
-vue_ui.text = "God-tier burgies!"
